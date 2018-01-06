@@ -20,3 +20,7 @@ app.post('/signin', function (req, res) {
     res.send('Failure');
   }
 })
+
+app.get('/home', function (req, res) {
+    res.sendFile(__dirname + '/html/home.html');
+})
